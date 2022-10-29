@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "name": "miaad ",
+      "email": "miaad@gmail.com",
+      "phoneNumber": "09301234567",
+      "password": "Miaad81$",
+      "passwordConfirm": "Miaad81$",
+      "gender": "0",
+      "nationality": "IR",
+      "interests": [
+        "vue.js",
+        "React.js"
+      ],
+      "id": 1
+    },
+    {
+      "name": "miaad2",
+      "email": "miaad@gmail.com",
+      "phoneNumber": "09301234567",
+      "password": "Miaad81$",
+      "passwordConfirm": "Miaad81$",
+      "gender": "0",
+      "nationality": "IR",
+      "interests": [
+        "vue.js",
+        "React.js"
+      ],
+      "id": 2
+    },
+    {
+      "name": "miaad4",
+      "email": "miaad4@gmail.com",
+      "phoneNumber": "12345698778",
+      "password": "Miaad12&",
+      "passwordConfirm": "Miaad12&",
+      "gender": "0",
+      "nationality": "IR",
+      "interests": [
+        "React.js"
+      ],
+      "id": 3
+    }
+  ]
+}

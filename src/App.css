@@ -10,7 +10,16 @@ label {
   font-weight: 800;
 }
 
-input {
+input + label {
+  font-weight: bold;
+  display: inline-flex;
+  margin: 0 20px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
   width: 400px;
   padding: 6px 12px;
   display: block;
@@ -28,6 +37,6 @@ button {
   padding: 5px 15px;
 }
 
-.error{
+.error {
   color: #ce1f1f;
 }
