@@ -6,6 +6,7 @@ import Input from "./common/Input";
 import RadioInput from "./common/RadioInput";
 import Select from "./common/SelectComponent";
 import CheckBoxInput from "./common/CheckBoxInput";
+import Terms from "./common/TermsComponent";
 
 const checkBoxOptions = [
   { label: "React.js", value: "React.js" },
@@ -34,6 +35,7 @@ const initialValues = {
   gender: "",
   nationality: "",
   interests: [],
+  terms: false,
 };
 // 2
 const onSubmit = (values) => {
@@ -85,6 +87,9 @@ const validationSchema = Yup.object({
   gender: Yup.string().required("Gender is required"),
   nationality: Yup.string().required("select nationality!"),
   interests: Yup.array().min(1).required("at least select one expertise"),
+  terms: Yup.boolean()
+    .required("You must accept the terms and conditions")
+    .oneOf([true], "You must accept the terms and conditions"),
 });
 
 const SignUpForm = () => {
@@ -135,6 +140,7 @@ const SignUpForm = () => {
           checkBoxOptions={checkBoxOptions}
           name="interests"
         />
+        <Terms formik={formik} terms="terms"/>
         <button type="submit" disabled={!formik.isValid}>
           Submit
         </button>
